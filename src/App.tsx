@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import type React from "react";
 import Context from "./context";
@@ -9,6 +10,7 @@ const App: React.FC = () => {
 			<Context.Provider value={"hello world"}>
 				<Layout>
 					<Header />
+					<Footer />
 				</Layout>
 			</Context.Provider>
 		</>

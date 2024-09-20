@@ -1,6 +1,6 @@
-import type React from "react";
 import logoSvg from "@/assets/images/logo.svg";
 import Switch from "@/components/Switch";
+import type React from "react";
 import styles from "./index.module.scss";
 
 // 头部组件
