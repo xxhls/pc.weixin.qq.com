@@ -8,7 +8,7 @@ const BackImg: React.FC = () => {
 	return (
 		<>
 			<div
-				className={cls(styles.wrapper, "animate__animated", "animate__fadeIn")}
+				className={cls(styles.wrapper, "animate__animated", "animate__fadeInUp")}
 			>
 				<img src={snapshotSvg} alt="background" className={styles.snapshot} />
 			</div>

@@ -1,13 +1,16 @@
-import Context from "@/context";
 import type React from "react";
-import { useContext } from "react";
+import logoSvg from "@/assets/images/logo.svg";
+import Switch from "@/components/Switch";
+import styles from "./index.module.scss";
 
 // 头部组件
 const Header: React.FC = () => {
-	const context = useContext(Context);
 	return (
 		<>
-			<div>{context}</div>
+			<div className={styles.wrapper}>
+				<img src={logoSvg} alt="logo" />
+				<Switch />
+			</div>
 		</>
 	);
 };
