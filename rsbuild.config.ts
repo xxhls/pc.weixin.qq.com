@@ -9,7 +9,12 @@ export default defineConfig({
 		pluginReact(),
 		pluginTypeCheck(),
 		pluginTypedCSSModules(),
-		pluginSass(),
+		pluginSass({
+			sassLoaderOptions: {
+				additionalData:
+					'@import "@/styles/variables.scss";@import "@/styles/common.scss";',
+			},
+		}),
 	],
 	tools: {
 		postcss: {

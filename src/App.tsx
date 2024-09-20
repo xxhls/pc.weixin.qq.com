@@ -1,11 +1,17 @@
-import "./App.css";
+import Header from "@/components/Header";
+import type React from "react";
+import Context from "./context";
+import Layout from "./layout";
 
-const App = () => {
+const App: React.FC = () => {
 	return (
-		<div className="content">
-			<h1>Rsbuild with React</h1>
-			<h1 className="text-3xl font-bold underline">Hello world!</h1>
-		</div>
+		<>
+			<Context.Provider value={"hello world"}>
+				<Layout>
+					<Header />
+				</Layout>
+			</Context.Provider>
+		</>
 	);
 };
 
