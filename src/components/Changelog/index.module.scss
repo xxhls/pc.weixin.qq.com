@@ -1,0 +1,24 @@
+.wrapper {
+    color: rgba(0, 0, 0, .7);
+    font-size: 17px;
+    line-height: 1.4;
+    width: 400px;
+}
+
+.item {
+    padding-left: 16px;
+    position: relative;
+    &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        left: 2px;
+        top: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 3px;
+        height: 3px;
+        background: rgba(0, 0, 0, .7);
+    }
+}
