@@ -27,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use Node.js 20
+      - name: Use Node.js 18
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -41,7 +41,7 @@ jobs:
       # 如果你使用其他的包管理器，如 yarn 或 pnpm，
       # 你需要先安装它们
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       - name: Build
         run: npm run build
