@@ -30,7 +30,13 @@ jobs:
       - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
+
+      - name: Install NRM
+        run: npm install nrm -g
+
+      - name: Use Taobao registry
+        run: nrm use taobao
 
       # 如果你使用其他的包管理器，如 yarn 或 pnpm，
       # 你需要先安装它们
