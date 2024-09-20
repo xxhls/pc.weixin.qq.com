@@ -1,0 +1,26 @@
+.wrapper {
+    position: fixed;
+    width: 100vw;
+    bottom: -240px;
+    z-index: -2;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: calc(100% - 50px);
+        background-image: url(@/assets/images/background.svg);
+        background-size: 100%;
+        top: 50px;
+        left: 0;
+        z-index: -3;
+    }
+}
+
+.snapshot {
+    width: 80vw;
+    height: fit-content;
+    max-width: 100vh;
+    margin: 0 auto;
+    z-index: -1;
+}
