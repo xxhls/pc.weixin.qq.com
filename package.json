@@ -3,10 +3,10 @@
 	"private": true,
 	"version": "1.0.0",
 	"scripts": {
-		"dev": "rsbuild dev --open",
-		"debug": "DEBUG=rsbuild rsbuild dev --open",
-		"build": "rsbuild build",
-		"preview": "rsbuild preview",
+		"dev": "npx rsbuild dev --open",
+		"debug": "npx DEBUG=rsbuild rsbuild dev --open",
+		"build": "npx rsbuild build",
+		"preview": "npx rsbuild preview",
 		"format": "npx @biomejs/biome check --write ."
 	},
 	"dependencies": {
