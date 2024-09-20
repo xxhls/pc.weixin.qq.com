@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
 import Context from "@/context";
+import type React from "react";
+import { useContext } from "react";
 
 // 头部组件
 const Header: React.FC = () => {
